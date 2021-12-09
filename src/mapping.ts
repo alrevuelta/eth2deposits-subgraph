@@ -10,6 +10,7 @@ export function handleDepositEvent(event: DepositEvent): void {
   deposit.amount = BigInt.fromUnsignedBytes(event.params.amount)
   deposit.signature = event.params.signature
   deposit.index = BigInt.fromUnsignedBytes(event.params.index)
+  deposit.from = event.transaction.from
   deposit.save()
 }
 

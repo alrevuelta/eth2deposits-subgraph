@@ -6,4 +6,5 @@ type Deposit @entity {
   amount: BigInt!
   signature: Bytes!
   index: BigInt!
+  from: Bytes!
 }

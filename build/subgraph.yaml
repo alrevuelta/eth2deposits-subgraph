@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Ethereum 2 deposit contract for mainnet
-repository: https://github.com/attestantio/eth2deposits-subgraph
+repository: https://github.com/alrevuelta/eth2deposits
 schema:
   file: schema.graphql
 dataSources:

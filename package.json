@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "scripts": {
     "build-contract": "solc contracts/deposit_contract.sol --abi -o abis --overwrite && solc contracts/deposit_contract.sol --bin -o bin --overwrite",
-    "create": "graph create attestantio/eth2deposits --node https://api.thegraph.com/deploy/",
-    "create-local": "graph create attestantio/eth2deposits --node http://127.0.0.1:8020",
+    "create": "graph create alrevuelta/eth2deposits --node https://api.thegraph.com/deploy/",
+    "create-local": "graph create alrevuelta/eth2deposits --node http://127.0.0.1:8020",
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy attestantio/eth2deposits --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy attestantio/eth2deposits --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy": "graph deploy alrevuelta/eth2deposits --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy-local": "graph deploy alrevuelta/eth2deposits --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.18.0",

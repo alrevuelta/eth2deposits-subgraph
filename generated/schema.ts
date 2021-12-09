@@ -95,4 +95,13 @@ export class Deposit extends Entity {
   set index(value: BigInt) {
     this.set("index", Value.fromBigInt(value));
   }
+
+  get from(): Bytes {
+    let value = this.get("from");
+    return value.toBytes();
+  }
+
+  set from(value: Bytes) {
+    this.set("from", Value.fromBytes(value));
+  }
 }
